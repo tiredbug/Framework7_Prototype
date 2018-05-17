@@ -1,0 +1,136 @@
+<div class="page blue-text" data-name="youraccount">
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left">
+        <a href="#" class="link icon-only panel-open" data-panel="left">
+          <i class="icon f7-icons ios-only">menu</i>
+          <i class="icon material-icons md-only">menu</i>
+        </a>
+      </div>
+      <div class="title sliding">
+        <img src="images/logo.png" alt="logo image" class="top-logo" align="center">
+      </div>
+    </div>
+  </div>
+  <div class="toolbar tabbar">
+    <div class="toolbar-inner">
+      <a href="#tab-1" class="tab-link tab-link-active">Your details</a>
+      <a href="#tab-2" class="tab-link">History</a>
+      <a href="#tab-3" class="tab-link">Account</a>
+    </div>
+  </div>
+  <div class="tabs-animated-wrap">
+    <div class="tabs">
+      <div id="tab-1" class="page-content tab tab-active">
+        <div class="block-title">Essentials</div>
+        <div class="card">
+          <div class="list">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">User ID:</div>
+                    <div class="item-after your-id">...</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Country of residence:</div>
+                    <div class="item-after your-country">...</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Age:</div>
+                    <div class="item-after your-age">...</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="block-title">Communications</div>
+        <div class="card">
+          <div class="list">
+            <label class="item-checkbox item-content">
+              <input type="checkbox" class="com-email"/>
+              <i class="icon icon-checkbox"></i>
+              <div class="item-inner">
+                <div class="item-title">Email notifications</div>
+              </div>
+            </label>
+          </div>
+          <div class="list">
+            <label class="item-checkbox item-content">
+              <input type="checkbox" class="com-whatsapp"/>
+              <i class="icon icon-checkbox"></i>
+              <div class="item-inner">
+                <div class="item-title">Whatsapp notifications</div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="tab-2" class="page-content tab">
+        <div class="block">
+          <div class="data-table">
+            <table class="history-list">
+              <thead>
+                <tr>
+                  <th class="label-cell">Source</th>
+                  <th>Type</th>
+                  <th>Uploaded</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="tab-3" class="page-content tab">
+        <div class="block-title">Pause all uploads for a set time:</div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-input-wrap">
+                    <input type="text" placeholder="Please choose the date" readonly="readonly" id="set-pause-date"/>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="block">
+          <button class="button button-big button-fill pause-account-btn">Pause account</button>
+        </div>
+
+        <hr class="width-90">
+
+        <div class="block">
+          <p class="upload-enabled-desc">Stop all uploads until enabled again</p>
+          <p class="row">
+            <button class="col button button-big stop-upload-btn">Stop upload</button>
+            <button class="col button button-big start-upload-btn">Start upload</button>
+          </p>
+        </div>
+
+        <hr class="width-90">
+
+        <div class="block">
+          <a class="list-button color-red account-delete-btn" href="#">Delete your account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

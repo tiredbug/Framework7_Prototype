@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>My App</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-reveal theme-dark">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Menu</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a class="panel-close" href="/home/">Home</a>
+                </li>
+                <li>
+                  <a class="panel-close" href="/datasources/">Data sources</a>
+                </li>
+                <li>
+                  <a class="panel-close" href="/editsources/">Edit sources</a>
+                </li>
+                <li>
+                  <a class="panel-close" href="/streamapprove/">Stream approve</a>
+                </li>
+                <li>
+                  <a class="panel-close" href="/youraccount/">Your account</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main ios-edges">
+      <!-- Page, data-name contains page name which can be used in callbacks -->
+      <div class="page" data-name="landing">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+          <div class="block">
+            <img src="images/logo.png" alt="logo image" class="logo" align="center">
+          </div>
+
+          <div class="block button-wrapper">
+            <p class="row">
+              <a class="col button button-big button-fill" href="/signin/">Sign in</a>
+            </p>
+            <p class="row">
+              <a class="col button button-big button-fill" href="/signup/">Sign up</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cordova -->
+  <!--
+  <script src="cordova.js"></script>
+  -->
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+  <script src="lib/canvasjs/canvasjs.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/landing.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/datasources.js"></script>
+  <script src="js/editsources.js"></script>
+  <script src="js/streamapprove.js"></script>
+  <script src="js/youraccount.js"></script>
+
+</body>
+</html>
